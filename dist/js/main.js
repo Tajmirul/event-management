@@ -31,6 +31,30 @@ $(document).ready(function () {
     //     autoplay: true
     // });
 
+    // setup an intersection observer
+    var observer = new IntersectionObserver(function (entries) {
+        entries.forEach(function (entry) {
+            if (entry.intersectionRatio > 0) {
+                // counter to js
+                $('.number-success__number').countTo({
+                    speed: 2000,
+                    delay: 500
+                });
+            }
+        });
+    });
+    observer.observe(document.querySelector('.number-success'));
+
+    // magnificPopup video
+    $('.popup-youtube').magnificPopup({
+		disableOn: 700,
+		type: 'iframe',
+		mainClass: 'mfp-fade',
+		removalDelay: 160,
+		preloader: false,
+		fixedContentPos: false
+	});
+
     // my code ----------------------------------------------------------------------
     $.each($('[data-bg-img]'), (index, item) => {
         $(item).css('background-image', $(item).data('bgImg'));

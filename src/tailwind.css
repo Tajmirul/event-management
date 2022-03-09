@@ -104,12 +104,13 @@
     }
 
     .animate-scroll-down-icon {
-        @apply animate-bounce duration-700 ease-in-out;
+        @apply block animate-bounce;
+        animation-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
     }
 
     /* buttons */
-        @apply inline-block border-0 outline-none px-4 py-2 text-base font-medium rounded-md transition;
     .button { 
+        @apply inline-block border-0 outline-none px-4 py-2 text-base font-medium rounded-md transition;
     }
     .button--primary {
         @apply px-10 py-3 text-base bg-white text-primary-900 font-medium font-Ubuntu rounded transition-all duration-300;

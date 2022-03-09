@@ -700,6 +700,10 @@ input {
   -webkit-text-stroke: 1px #fff;
 }
 
+.animate-scroll-down-icon {
+  display: block;
+}
+
 @-webkit-keyframes bounce {
   0%, 100% {
     transform: translateY(-25%);
@@ -731,6 +735,8 @@ input {
 .animate-scroll-down-icon {
   -webkit-animation: bounce 1s infinite;
           animation: bounce 1s infinite;
+  -webkit-animation-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+          animation-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
 }
 
 /* buttons */

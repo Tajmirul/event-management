@@ -43,7 +43,8 @@ $(document).ready(function () {
             }
         });
     });
-    observer.observe(document.querySelector('.number-success'));
+    const numberSection = document.querySelector('.number-success');
+    if (numberSection) observer.observe(numberSection);
 
     // magnificPopup video
     $('.popup-youtube').magnificPopup({

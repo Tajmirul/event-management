@@ -13,12 +13,33 @@ $(document).ready(function () {
     //         type: 'iframe'
     //     });
 
-    //for menu active class
-    //     $('.portfolio-menu button').on('click', function (event) {
-    //         $(this).siblings('.active').removeClass('active');
-    //         $(this).addClass('active');
-    //         event.preventDefault();
-    //     });
+    // jquery counter 
+    $.each($('.time-counter'), function (index, value) {
+        // date format MM/DD/YYYY hh:mm:ss
+        const htmlTemplate = `
+            <div class="time-counter__item">
+                <div class="time-counter__number">%D</div>
+                <div class="time-counter__text">Days</div>
+            </div>
+            <div class="time-counter__item">
+                <div class="time-counter__number">%H</div>
+                <div class="time-counter__text">Hour</div>
+            </div>
+            <div class="time-counter__item">
+                <div class="time-counter__number">%M</div>
+                <div class="time-counter__text">Minute</div>
+            </div>
+            <div class="time-counter__item">
+                <div class="time-counter__number">%S</div>
+                <div class="time-counter__text">Second</div>
+            </div>
+		`;
+
+        const date = $(this).data('date');
+        // const counter = $(this).countdown(date, function (event) {
+        //     $(this).html(event.strftime(htmlTemplate));
+        // });
+    });
 
     // WOW active
     //     new WOW().init();

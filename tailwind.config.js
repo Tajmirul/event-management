@@ -1,7 +1,8 @@
 module.exports = {
     content: [
-        './src/**/*.css',
-        './*.html'
+        './src/**/*.{html, css, js}',
+        './*.html',
+        './node_modules/tw-elements/dist/js/**/*.js'
     ],
     theme: {
         "fontFamily": {

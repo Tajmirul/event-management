@@ -121,5 +121,8 @@ $(document).ready(function () {
     //         $(this).parent().find('>ul').slideToggle()
     //     });
 
-
+    $('.download-theme').click(function () {
+        const targetUrl = $(this).attr('href');
+        window.open(targetUrl, '_blank');
+    });
 });

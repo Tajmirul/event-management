@@ -69,13 +69,13 @@ $(document).ready(function () {
 
     // magnificPopup video
     $('.popup-youtube').magnificPopup({
-		disableOn: 700,
-		type: 'iframe',
-		mainClass: 'mfp-fade',
-		removalDelay: 160,
-		preloader: false,
-		fixedContentPos: false
-	});
+        disableOn: 700,
+        type: 'iframe',
+        mainClass: 'mfp-fade',
+        removalDelay: 160,
+        preloader: false,
+        fixedContentPos: false
+    });
 
     // my code ----------------------------------------------------------------------
     $.each($('[data-bg-img]'), (index, item) => {
@@ -87,24 +87,18 @@ $(document).ready(function () {
     //     }, 1500);
 
     // sticky menu ber and go to top button
-    //     $(window).scroll(function () {
-    //         var scrolled = $(window).scrollTop();
-    //         var topMain = $('main').offset().top - 400;
+    $(window).scroll(function () {
+        var scrolled = $(window).scrollTop();
 
-    // go to top button
-    //         if (scrolled > topMain) {
-    //             $('.go-to-top').addClass('active');
-    //             $('.nav-outer').addClass('sticky');
-
-    //             $('.go-to-top').click(function () {
-    //                 $(window).scrollTop(0);
-    //             });
-    //         } else {
-    //             $('.go-to-top').removeClass('active');
-    //             $('.nav-outer').removeClass('sticky')
-    //         }
-    // console.log(scrolled);
-    //     });
+        // go to top button
+        if (scrolled > 500) {
+            $('.header').addClass('sticky');
+            $('.header-proxy').removeClass('hidden');
+        } else {
+            $('.header').removeClass('sticky');
+            $('.header-proxy').addClass('hidden');
+        }
+    });
 
     // menu bar open -------------------------
     $('.mobile-menu-open').click(function () {

@@ -90,7 +90,7 @@
 
     /* mobile menu */
     .mobile-menu {
-        @apply fixed top-0 right-0 w-[300px] h-full bg-white z-10 p-3 translate-x-[100%] opacity-0 invisible transition;
+        @apply fixed top-0 right-0 w-[240px] h-full bg-white z-10 p-3 translate-x-[100%] opacity-0 invisible transition;
     }
     .mobile-menu.active {
         @apply translate-x-0 opacity-100 visible;
@@ -147,15 +147,13 @@
         @apply relative mb-11;
     }
     .section-heading__back-text {
-        @apply bottom-0 text-[50px] left-[-15px] -translate-y-[20%] font-Ubuntu font-bold leading-none text-slate-100 select-none whitespace-nowrap;
-        @apply  md:text-[70px];
-        @apply absolute xl:text-[150px];
+        @apply top-1/2 text-[50px] left-[-15px] -translate-y-[50%] font-Ubuntu font-bold leading-none text-slate-100 select-none whitespace-nowrap md:text-[70px] absolute xl:text-[150px];
     }
     .section-heading__back-text.light {
         @apply text-slate-100 opacity-20;
     }
     .section-heading__back-text.small {
-        @apply text-[50px] translate-y-[-15%] md:text-[70px] lg:text-[100px];
+        @apply text-[50px] md:text-[70px] lg:text-[100px];
     }
     .section-heading__text {
         @apply relative z-[1] font-Rubik font-light text-[28px] lg:text-[38px] text-primary-900 leading-[1.3];
@@ -250,13 +248,13 @@
 
     /* time counter */
     .time-counter {
-        @apply inline-grid gap-3 lg:gap-10 grid-cols-4 items-center text-white;
+        @apply inline-grid gap-3 lg:gap-10 grid-cols-4 items-center text-white text-center;
     }
     .time-counter__item {
         @apply relative;
     }
     .time-counter__number {
-        @apply font-Ubuntu font-bold text-[36px] md:text-[45px] lg:text-[70px];
+        @apply font-Ubuntu font-bold text-[18px] sm:text-[26px] lg:text-[40px];
     }
     .time-counter__item:not(:last-child) .time-counter__number::after {
         font-size: inherit;

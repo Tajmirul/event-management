@@ -35,10 +35,10 @@ $(document).ready(function () {
             </div>
 		`;
 
-        const date = $(this).data('date');
-        // const counter = $(this).countdown(date, function (event) {
-        //     $(this).html(event.strftime(htmlTemplate));
-        // });
+        const date = $(this).data('countEnd');
+        const counter = $(this).countdown(date, function (event) {
+            $(this).html(event.strftime(htmlTemplate));
+        });
     });
 
     // WOW active

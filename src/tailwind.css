@@ -68,7 +68,7 @@
     }
 
     .header.sticky {
-        @apply fixed top-0 left-0 right-0 z-[1] shadow-md;
+        @apply fixed top-0 left-0 right-0 z-[2] shadow-md;
     }
     
     .nav-menu {
@@ -299,7 +299,7 @@
     }
 
     .special-subscribe-section {
-        background-image: linear-gradient(to right, #009344eb, #009344eb), url('../img/bg/bg-8.png');
+        background-image: linear-gradient(to right, #1976bceb, #1976bceb), url('../img/bg/bg-8.png');
         background-size: cover;
         background-position: center;
     }
@@ -311,7 +311,7 @@
     }
     @media (min-width: 992px) {
         .special-subscribe-section {
-            background-image: linear-gradient(to right, #ffffffba 10%, #009344eb 30%, #009344eb 70%, #ffffffba), url('../img/bg/bg-8.png');
+            background-image: linear-gradient(to right, #ffffffba 10%, #1976bceb 30%, #1976bceb 70%, #ffffffba), url('../img/bg/bg-8.png');
         }
     }
 }

@@ -1709,10 +1709,6 @@ input {
   max-width: 1000px;
 }
 
-.max-w-\[50px\] {
-  max-width: 50px;
-}
-
 .max-w-\[70px\] {
   max-width: 70px;
 }
@@ -1906,16 +1902,16 @@ input {
   padding-bottom: 0px;
 }
 
+.pt-10 {
+  padding-top: 2.5rem;
+}
+
 .pr-5 {
   padding-right: 1.25rem;
 }
 
 .pt-4 {
   padding-top: 1rem;
-}
-
-.pt-10 {
-  padding-top: 2.5rem;
 }
 
 .text-left {

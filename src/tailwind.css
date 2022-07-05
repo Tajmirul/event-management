@@ -68,7 +68,7 @@
     }
 
     .header.sticky {
-        @apply fixed top-0 left-0 right-0 z-[2] shadow-md;
+        @apply fixed top-0 left-0 right-0 z-[11] shadow-md;
     }
     
     .nav-menu {

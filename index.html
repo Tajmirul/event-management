@@ -1,11 +1,5 @@
-<!-- 
-    Theme:      Online Exam
-    Made By:    Tajmirul Islam Akhand 
-    contact:    tasmirolislam@gmail.com
-    facebook:   https://facebook.com/akhand.tajmirul
--->
-
 <!DOCTYPE html>
+
 <html class="no-js" lang="en">
 
 <head>
@@ -29,6 +23,11 @@
     <link rel="stylesheet" href="dist/css/all.min.css">
     <link rel="stylesheet" href="dist/css/magnific-popup.css">
     <link rel="stylesheet" href="dist/css/tailwind.css">
+    <style>
+        .about_confer {
+            display: none;
+        }
+    </style>
 </head>
 
 <body>
@@ -154,16 +153,19 @@
                             <h3 class="section-heading__text">[ About Conference ]</h3>
                         </div>
 
-                        <p class="leading-[200%] mb-7">
+                        <p class="leading-[200%] mb-7 about_confer">
                             The Faculty of Earth and Environmental Sciences, University of Dhaka, Bangladesh is again organizinge the “Second International Conference on Earth and Environmental Sciences and Technology for Sustainable Development- 2023”. This time, the conference
                             is focusing on flourishing the area of Blue Economy, developing the potential of the Geo- Resources, exploring the Changing Climate and combating the natural Disaster Risks in a global context, improving Engineering Technology
                             to manage natural disaster for the sustainable development in a national, regional and global context that covers a wide range of critically important sessions. Our aim is to disseminate acquired knowledge among the researchers
-                            and students through mutual collaboration. It is an important drive to increase collaboration both at the national and international levels. The mission of this conference is to understand the planet Earth and Environment;
-                            convey the understanding to scientists and practitioners and equip them with the knowledge to serve the communities. A few decades ago Earth and Environmental sciences had been the study of natural phenomena, but now humans
-                            are altering the Earth’s climate, its landforms, and its biota. Flood, cyclone, earthquake, volcanic eruption, tsunami, hurricane, and other natural hazards have always been with us, but they are more destructive on our increasingly
-                            crowded planet because of anthropogenic factors. The participants of theis conference will achieve a comprehensive and deep understanding of the crucial issues that interdisciplinary earth sciences deal with in this 21st century.
+                            and students through mutual collaboration.
                         </p>
-                        <!-- <a href="#" class="button button--secondary">Read More</a> -->
+                        <p class="leading-[200%] mb-7 about_confer">
+                            It is an important drive to increase collaboration both at the national and international levels. The mission of this conference is to understand the planet Earth and Environment; convey the understanding to scientists and practitioners and equip them
+                            with the knowledge to serve the communities. A few decades ago Earth and Environmental sciences had been the study of natural phenomena, but now humans are altering the Earth’s climate, its landforms, and its biota. Flood,
+                            cyclone, earthquake, volcanic eruption, tsunami, hurricane, and other natural hazards have always been with us, but they are more destructive on our increasingly crowded planet because of anthropogenic factors. The participants
+                            of theis conference will achieve a comprehensive and deep understanding of the crucial issues that interdisciplinary earth sciences deal with in this 21st century.
+                        </p>
+                        <a href="#" class="button button--secondary" id="read_more">Read More</a>
                     </div>
                     <div>
                         <img src="dist/img/7.jpg" alt="" class="mx-auto">
@@ -341,13 +343,6 @@
 
     <footer class="section-padding-b pt-10 text-center" data-bg-img="url('dist/img/bg/bg-3.png')">
         <div class="container">
-            <div class="sponsors grid grid-cols-2 sm:grid-cols-3 md:grid-cols-5 gap-10 mb-10 items-center">
-                <img src="dist/img/sponsor/1.png" alt="" class="max-w-[70px] mx-auto">
-                <img src="dist/img/sponsor/2.png" alt="" class="max-w-[70px] mx-auto">
-                <img src="dist/img/sponsor/3.png" alt="" class="max-w-[70px] mx-auto">
-                <img src="dist/img/sponsor/4.png" alt="" class="max-w-[70px] mx-auto">
-                <img src="dist/img/sponsor/5.png" alt="" class="max-w-[70px] mx-auto">
-            </div>
 
             <img src="dist/img/du-logo.png" alt="" class="mx-auto mb-10">
             <p class="text-[20px] lg:text-[36px] mb-7">Faculty of Earth and Environmental Sciences, University of Dhaka, Dhaka-1000, Bangladesh</p>
@@ -384,6 +379,19 @@
 <script src="dist/js/jquery.countTo.js"></script>
 <script src="dist/js/jquery.magnific-popup.min.js"></script>
 <script src="dist/js/main.js"></script>
+<script>
+    $(document).ready(function() {
+        $(".about_confer").slice(0, 1).show();
+        $("#read_more").on("click", function(e) {
+            e.preventDefault();
+            $(".about_confer:hidden").slice(0, 9).slideDown();
+            if ($(".about_confer:hidden").length == 0) {
+                $("#read_more").hide();
+            }
+        });
+
+    })
+</script>
 </body>
 
 </html>

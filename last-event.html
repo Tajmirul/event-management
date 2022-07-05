@@ -1,11 +1,5 @@
-<!-- 
-    Theme:      Online Exam
-    Made By:    Tajmirul Islam Akhand 
-    contact:    tasmirolislam@gmail.com
-    facebook:   https://facebook.com/akhand.tajmirul
--->
-
 <!DOCTYPE html>
+
 <html class="no-js" lang="en">
 
 <head>
@@ -31,6 +25,10 @@
     <link rel="stylesheet" href="dist/css/tailwind.css">
     <style>
         .content {
+            display: none;
+        }
+        
+        .about_confer {
             display: none;
         }
     </style>
@@ -313,18 +311,19 @@
                             <span class="section-heading__back-text xl:text-[120px]">2019</span>
                             <h3 class="section-heading__text">[ The Event of Last Year ]</h3>
                         </div>
-                        <p>
-                            The Faculty of Earth and Environmental Sciences organized the last “International Conference on Earth and Environmental Sciences & Technology for Sustainable Development - 2020” held on 25-30 January 2020 in Hotel InterContinental Dhaka, Bangladesh. The
-                            Honorable President of the People's Republic of Bangladesh, His Excellency Mr. Md. Abdul Hamid and the Honorable Minister of Education, Dr. Dipu Moni, MP, graciously attended the opening ceremony of the conference. Moreover,
-                            Dr. Muhammad Hasan Mahmud, MP, Honorable Minister, Ministry of Information, was present as the Chief Guest in the closing ceremony of the conference. Considering the fundamental and applied areas of the disciplines as well
-                            as addressing cross- cutting issues, six sub-themes including 24 thematic areas were identified for the conference: Blue Economy: Global and Bay of Bengal Perspectives, Geo-Resources Exploration, Development and Management,
-                            Disaster Resilience and Sustainability, Environmental Perspectives on Population Dynamics and Regional Development, Meteorology, Weather Forecasting and Application; and Delta Processes and Management. UN Women, Bangladesh
-                            joined the conference with another thematic area entitled “Gender Sensitive Infrastructures”. Scientific and technical including financial supports were received from 22 national and international organizations, comprising
-                            of academic institutions (viz. University of Dhaka, University College London), relevant public and private agencies, World Bank, NGOs and scientific societies. In the conference, around 73 international participants from 20
-                            countries and 580 local researchers attended. A total of 465 scientific articles were presented in 32 sessions. Eight hundred copies of conference book including 465 abstracts were printed and distributed among the participants
-                            including other conference materials.
+                        <p class="about_confer">
+                            The Faculty of Earth and Environmental Sciences organized the last “International Conference on Earth and Environmental Sciences & Technology for Sustainable Development - 2020” held on 25-30 January 2020 in Hotel InterContinental Dhaka, Bangladesh.
                         </p>
-                        <!-- <a href="#" class="button button--secondary mt-10">Read More</a> -->
+                        <p class="about_confer">
+                            The Honorable President of the People's Republic of Bangladesh, His Excellency Mr. Md. Abdul Hamid and the Honorable Minister of Education, Dr. Dipu Moni, MP, graciously attended the opening ceremony of the conference. Moreover, Dr. Muhammad Hasan Mahmud,
+                            MP, Honorable Minister, Ministry of Information, was present as the Chief Guest in the closing ceremony of the conference. Considering the fundamental and applied areas of the disciplines as well as addressing cross- cutting
+                            issues, six sub-themes including 24 thematic areas were identified for the conference: Blue Economy: Global and Bay of Bengal Perspectives, Geo-Resources Exploration, Development and Management, Disaster Resilience and Sustainability,
+                            Environmental Perspectives on Population Dynamics and Regional Development, Meteorology, Weather Forecasting and Application; and Delta Processes and Management. UN Women, Bangladesh joined the conference with another thematic
+                            area entitled “Gender Sensitive Infrastructures”. Scientific and technical including financial supports were received from 22 national and international organizations, comprising of academic institutions (viz. University of
+                            Dhaka, University College London), relevant public and private agencies, World Bank, NGOs and scientific societies. In the conference, around 73 international participants from 20 countries and 580 local researchers attended.
+                            A total of 465 scientific articles were presented in 32 sessions. Eight hundred copies of conference book including 465 abstracts were printed and distributed among the participants including other conference materials.
+                        </p>
+                        <a href="#" class="button button--secondary mt-10" id="read_more">Read More</a>
                     </div>
                     <div class="mx-auto">
                         <img src="dist/img/29.jpg" alt="">
@@ -433,6 +432,14 @@
                 $(".content:hidden").slice(0, 9).slideDown();
                 if ($(".content:hidden").length == 0) {
                     $("#loadMore").text("No Content").addClass("noContent");
+                }
+            });
+            $(".about_confer").slice(0, 1).show();
+            $("#read_more").on("click", function(e) {
+                e.preventDefault();
+                $(".about_confer:hidden").slice(0, 9).slideDown();
+                if ($(".about_confer:hidden").length == 0) {
+                    $("#read_more").hide();
                 }
             });
 

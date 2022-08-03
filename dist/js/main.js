@@ -45,12 +45,33 @@ $(document).ready(function () {
     //     new WOW().init();
 
     // slick slider for banner 
-    // $('.banner-slider').slick({
-    //     prevArrow: '<i class="arrows prev icofont-rounded-left"></i>',
-    //     nextArrow: '<i class="arrows next icofont-rounded-right"></i>',
-    // dots: true,
-    //     autoplay: true
-    // });
+    $('.sponsors-slider').slick({
+        prevArrow: '<i class="arrows prev icofont-rounded-left"></i>',
+        nextArrow: '<i class="arrows next icofont-rounded-right"></i>',
+        dots: false,
+        autoplay: true,
+        slidesToShow: 6,
+        slidesToScroll: 1,
+        pauseOnHover: true,
+        draggable: false,
+        autoplaySpeed: 0,
+        speed: 5000,
+        cssEase: 'linear',
+        responsive: [
+            {
+                breakpoint: 1024,
+                settings: {
+                    slidesToShow: 3,
+                },
+            },
+            {
+                breakpoint: 640,
+                settings: {
+                    slidesToShow: 2,
+                },
+            },
+        ]
+    });
 
     // setup an intersection observer
     var observer = new IntersectionObserver(function (entries) {

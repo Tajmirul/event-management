@@ -1953,6 +1953,10 @@ input {
   border-right-width: 1px;
 }
 
+.border-b {
+  border-bottom-width: 1px;
+}
+
 .border-white {
   --tw-border-opacity: 1;
   border-color: rgb(255 255 255 / var(--tw-border-opacity));
@@ -2111,10 +2115,6 @@ input {
 
 .text-\[30px\] {
   font-size: 30px;
-}
-
-.text-\[60px\] {
-  font-size: 60px;
 }
 
 .text-\[24px\] {
@@ -2415,10 +2415,6 @@ input {
     font-size: 30px;
   }
 
-  .md\:text-\[100px\] {
-    font-size: 100px;
-  }
-
   .md\:text-\[50px\] {
     font-size: 50px;
   }
@@ -2657,10 +2653,6 @@ input {
 
   .xl\:text-\[80px\] {
     font-size: 80px;
-  }
-
-  .xl\:text-\[180px\] {
-    font-size: 180px;
   }
 
   .xl\:text-\[120px\] {

@@ -47,56 +47,32 @@
 
                 <button type="button" class="button button--rounded mobile-menu-open lg:hidden"><i class="fas fa-bars"></i></button>
 
-                <div class="mobile-menu">
-                    <button type="button" class="button button--rounded mobile-menu-close bg-white absolute right-[105%] top-[2%]"><i class="fas fa-times"></i></button>
-                    <ul class="mobile-menu__list">
-                        <li class="mobile-menu__item">
-                            <a href="/" class="mobile-menu__link">Home</a>
-                        </li>
-                        <li class="mobile-menu__item">
-                            <a href="last-event.html" class="mobile-menu__link">Last Event</a>
-                        </li>
-                        <li class="mobile-menu__item">
-                            <a href="conference.html" class="mobile-menu__link">Conference 2023</a>
-                        </li>
-                        <li class="mobile-menu__item">
-                            <a href="sub-theme.html" class="mobile-menu__link">Sub Theme</a>
-                        </li>
-                        <li class="mobile-menu__item">
-                            <a href="#" class="mobile-menu__link">Schedule</a>
-                        </li>
-                        <li class="mobile-menu__item">
-                            <a href="#" class="mobile-menu__link">Registration</a>
-                        </li>
-                        <li class="mobile-menu__item">
-                            <a href="#" class="mobile-menu__link">Submit Abstract</a>
-                        </li>
-
-
-                    </ul>
-                </div>
-
                 <div class="nav-menu hidden lg:block">
                     <ul class="nav-menu__list">
                         <li class="nav-menu__item">
                             <a href="index.html" class="nav-menu__link">Home</a>
                         </li>
-                        <li>
-                            <a href="last-event.html" class="nav-menu__link">Last Event</a>
+                        <li class="nav-menu__item">
+                            <a href="last-event.html" class="nav-menu__link">Last Event <i class="fas fa-angle-down ml-1"></i></a>
+                            <ul class="nav-sub-menu">
+                                <li><a href="#">Event 1</a></li>
+                                <li><a href="#">Event 2</a></li>
+                                <li><a href="#">Event 3</a></li>
+                            </ul>
                         </li>
-                        <li>
+                        <li class="nav-menu__item">
                             <a href="conference.html" class="nav-menu__link">Conference 2023</a>
                         </li>
-                        <li>
+                        <li class="nav-menu__item">
                             <a href="sub-theme.html" class="nav-menu__link">Sub Theme</a>
                         </li>
-                        <li>
+                        <li class="nav-menu__item">
                             <a href="#" class="nav-menu__link">Schedule </a>
                         </li>
-                        <li>
+                        <li class="nav-menu__item">
                             <a href="#" class="nav-menu__link">Registration</a>
                         </li>
-                        <li>
+                        <li class="nav-menu__item">
                             <a href="#" class="nav-menu__link">Submit Abstract</a>
                         </li>
                     </ul>
@@ -382,6 +358,41 @@
             <p class="text-[14px] lg:text-[22px]">@ 2022, Viewpoint. All Rights Reserved</p>
         </div>
     </footer>
+
+    <div class="mobile-menu">
+        <button type="button" class="button button--rounded mobile-menu-close bg-white absolute right-[105%] top-[2%]"><i class="fas fa-times"></i></button>
+        <ul class="mobile-menu__list">
+            <li class="mobile-menu__item">
+                <a href="/" class="mobile-menu__link">Home</a>
+            </li>
+            <li class="mobile-menu__item">
+                <a href="last-event.html" class="mobile-menu__link">Last Event</a>
+                <button class="h-7 w-7 flex items-center justify-center text-sm bg-gray-100 rounded-full absolute top-1 right-2 toggle-mobile-sub-menu"><i class="fas fa-angle-down"></i></button>
+                <ul class="mobile-sub-menu hidden">
+                    <li><a href="#" class="py-1 my-[2px] inline-block text-sm">Event 1</a></li>
+                    <li><a href="#" class="py-1 my-[2px] inline-block text-sm">Event 2</a></li>
+                    <li><a href="#" class="py-1 my-[2px] inline-block text-sm">Event 3</a></li>
+                </ul>
+            </li>
+            <li class="mobile-menu__item">
+                <a href="conference.html" class="mobile-menu__link">Conference 2023</a>
+            </li>
+            <li class="mobile-menu__item">
+                <a href="sub-theme.html" class="mobile-menu__link">Sub Theme</a>
+            </li>
+            <li class="mobile-menu__item">
+                <a href="#" class="mobile-menu__link">Schedule</a>
+            </li>
+            <li class="mobile-menu__item">
+                <a href="#" class="mobile-menu__link">Registration</a>
+            </li>
+            <li class="mobile-menu__item">
+                <a href="#" class="mobile-menu__link">Submit Abstract</a>
+            </li>
+
+
+        </ul>
+    </div>
 
     <div class="overlay"></div>
 

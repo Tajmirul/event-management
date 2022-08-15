@@ -132,9 +132,9 @@ $(document).ready(function () {
         $('.overlay').removeClass('active');
     });
     // dropdown toggle ------------------
-    //     $('.mobile-navigations li.has-dropdown > i').click(function () {
-    //         $(this).parent().find('>ul').slideToggle()
-    //     });
+    $('.mobile-menu__item > .toggle-mobile-sub-menu').click(function () {
+        $(this).parent().find('>ul').slideToggle(200)
+    });
 
     $('.download-theme').click(function () {
         const targetUrl = $(this).attr('href');

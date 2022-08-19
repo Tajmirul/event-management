@@ -138,7 +138,7 @@
         @apply inline-block border-0 outline-none px-4 py-2 text-[14px] md:text-base font-medium rounded-md transition;
     }
     .button--primary {
-        @apply px-10 py-3 text-base bg-white text-primary-900 font-medium font-Ubuntu rounded transition-all duration-300;
+        @apply inline-flex px-10 py-3 text-base bg-white text-primary-900 font-medium font-Ubuntu rounded transition-all duration-300;
         @apply hover:bg-primary-700 hover:text-white;
     }
     .button--secondary {

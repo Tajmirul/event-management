@@ -50,8 +50,11 @@
     input {
         outline: none;
     }
-    .section-padding {
-        @apply py-[100px];
+    .section-padding-t, .section-padding {
+        @apply pt-[100px];
+    }
+    .section-padding-b, .section-padding {
+        @apply pb-[100px];
     }
 }
 

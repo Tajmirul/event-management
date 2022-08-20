@@ -72,6 +72,31 @@ $(document).ready(function () {
             },
         ]
     });
+    $('.data-slider').slick({
+        dots: false,
+        autoplay: true,
+        slidesToShow: 6,
+        slidesToScroll: 1,
+        pauseOnHover: true,
+        draggable: false,
+        autoplaySpeed: 0,
+        speed: 5000,
+        cssEase: 'linear',
+        responsive: [
+            {
+                breakpoint: 1024,
+                settings: {
+                    slidesToShow: 3,
+                },
+            },
+            {
+                breakpoint: 640,
+                settings: {
+                    slidesToShow: 2,
+                },
+            },
+        ]
+    })
 
     // setup an intersection observer
     var observer = new IntersectionObserver(function (entries) {
